@@ -1,0 +1,34 @@
+{
+    "name": "programic/laravel-hoorayhr",
+    "license": "proprietary",
+    "type": "package",
+    "description": "Wrapper for the HoorayHR API",
+    "readme": "README.md",
+    "authors": [
+        {
+            "name": "Programic",
+            "email": "development@programic.com",
+            "homepage": "https://programic.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "~6.0 | ~7.0",
+    },
+    "require-dev": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "Programic\\Hooray\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Programic\\Hooray\\HoorayHRServiceProvider"
+            ]
+        }
+    }
+}
